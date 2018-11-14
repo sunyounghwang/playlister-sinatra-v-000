@@ -1,4 +1,6 @@
 class SongsController < ApplicationController
+ enable :sessions
+
   get "/songs" do
     erb :"songs/index"
   end
