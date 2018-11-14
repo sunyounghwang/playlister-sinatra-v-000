@@ -16,10 +16,6 @@ class ApplicationController < Sinatra::Base
       Song.find_by_slug(params[:slug])
     end
 
-    def newest_song
-      Song.last
-    end
-
     def all_artists
       Artist.all
     end
