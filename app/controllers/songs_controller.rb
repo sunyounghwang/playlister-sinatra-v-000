@@ -1,6 +1,5 @@
 class SongsController < ApplicationController
   enable :sessions
-  use Rack::Flash
 
   get "/songs" do
     erb :"songs/index"
